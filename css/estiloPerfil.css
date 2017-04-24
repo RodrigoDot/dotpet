@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+
+#containerGeral{
+    margin: 1% auto 1% auto;
+    width: 90%;
+    -webkit-border-radius: 10px;
+}
+
+#corpo{
+    width: 90%;
+    min-height: 450px;
+    padding: 2.2321%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1%;
+    background-color: #e8f2dd;
+    -webkit-border-radius: 10px;
+}
+
+#pessoalInfo {
+    width: 19%;
+    float: left;
+    border-radius: 10px;
+    margin-right: 0.1%;
+}
+
+#pessoalInfo img{
+    width: 100%;
+}
+
+#pessoalInfo label{
+    display: block;
+    text-align: center;
+}
+
+#menuNavegacaoPerfil {
+    color: aliceblue;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background-color: darkgreen;
+    -webkit-border-radius: 10px;
+}
+
+#menuNavegacaoPerfil li{
+    display: inline-block;
+    width: 33%;
+    padding: 1%;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#menuNavegacaoPerfil li:hover{
+    background-color: #b3d594;
+    color: darkgreen;
+}
+
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+#rodapeLegendas label{
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.btn-primary, .btn-danger {
+    font-size: 1em;
+    margin: 40px 2% 10px 2%;
+    padding: 10px;
+    width: 46%;
+    -webkit-border-radius: 10px;
+}
+
+.btn-info {
+    padding: 10px;
+}
+
+.alert, alert-danger {
+    text-align: center;
+}
+
+
+
+
+
+
+
+

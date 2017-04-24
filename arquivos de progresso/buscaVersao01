@@ -1,0 +1,92 @@
+if       ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] > 0 && $_POST['ncastracao'] > 0 && $_POST['nsexo_animal'] > 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and 
+                    id_raca like '$_POST[nraca]' and 
+                    id_porte like '$_POST[nporte]' and 
+                    id_castracao like '$_POST[ncastracao]' and 
+                    id_sexo like '$_POST[nsexo_animal]'
+                ");
+        
+                echo $sqlBusca."</br>";
+        
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] > 0 && $_POST['ncastracao'] > 0 && $_POST['nsexo_animal'] = 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and 
+                    id_raca like '$_POST[nraca]' and 
+                    id_porte like '$_POST[nporte]' and 
+                    id_castracao like '$_POST[ncastracao]'
+                ");
+        
+                echo $sqlBusca."</br>";
+    
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] > 0 && $_POST['ncastracao'] = 0 && $_POST['nsexo_animal'] > 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and 
+                    id_raca like '$_POST[nraca]' and 
+                    id_porte like '$_POST[nporte]' and 
+                    id_sexo like '$_POST[nsexo_animal]'
+                ");
+        
+                echo $sqlBusca."</br>";
+            
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] = 0 && $_POST['ncastracao'] > 0 && $_POST['nsexo_animal'] > 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and 
+                    id_raca like '$_POST[nraca]' and 
+                    id_sexo like '$_POST[nsexo_animal]' and 
+                    id_castracao like '$_POST[ncastracao]'
+                ");
+        
+                echo $sqlBusca."</br>";    
+    
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] = 0 && $_POST['nporte'] > 0 && $_POST['ncastracao'] = 0 && $_POST['nsexo_animal'] = 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and 
+                    id_castracao like '$_POST[ncastracao]' and 
+                    id_porte like '$_POST[nporte]' and
+                    id_sexo like '$_POST[nsexo]' 
+                ");
+        
+                echo $sqlBusca."</br>";        
+   
+    }else if ($_POST['ntipo'] = 0 && $_POST['nraca'] > 0 && $_POST['nporte'] = 0 && $_POST['ncastracao'] = 0 && $_POST['nsexo_animal'] = 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_porte like '$_POST[nporte]' and 
+                    id_raca like '$_POST[nraca]' and
+                    id_castracao like '$_POST[ncastracao]' and
+                    id_sexo like '$_POST[nsexo_animal]'
+                ");
+        
+                echo $sqlBusca."</br>"; 
+        
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] > 0 && $_POST['ncastracao'] = 0 && $_POST['nsexo_animal'] = 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and
+                    id_raca like '$_POST[nraca]' and
+                    id_porte like '$_POST[nporte]' and
+                ");
+        
+                echo $sqlBusca."</br>";
+    
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] = 0 && $_POST['ncastracao'] = 0 && $_POST['nsexo_animal'] > 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and
+                    id_raca like '$_POST[nraca]' and
+                    id_sexo like '$_POST[nsexo_animal]' and
+                ");
+        
+                echo $sqlBusca."</br>";
+    
+    }else if ($_POST['ntipo'] > 0 && $_POST['nraca'] > 0 && $_POST['nporte'] = 0 && $_POST['ncastracao'] > 0 && $_POST['nsexo_animal'] = 0){
+                $sqlBusca = ("SELECT * FROM animais WHERE 
+                    id_tipo like '$_POST[ntipo]' and
+                    id_raca like '$_POST[nraca]' and
+                    id_castracao like '$_POST[ncastracao]' and
+                ");
+        
+                echo $sqlBusca."</br>";
+        
+    }else {
+                $sqlBusca = ("SELECT * FROM animais");
+                echo $sqlBusca."</br>";
+    }

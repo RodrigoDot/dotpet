@@ -1,0 +1,38 @@
+
+ if ($_POST['ntipo'] == 0){
+        $tipo = '%';
+    }else{
+        $tipo = $_POST['ntipo'];    
+    }
+
+    if ($_POST['nraca'] == 0){
+        $raca = '%';
+    }else{
+        $raca = $_POST['nraca'];    
+    }
+
+    if ($_POST['nporte'] == 0){
+        $porte = '%';
+    }else{
+        $porte = $_POST['nporte'];    
+    }
+
+    if ($_POST['ncastracao'] == 0){
+        $castracao = '%';
+    }else{
+        $castracao = $_POST['ncastracao'];    
+    }
+
+    if ($_POST['nsexo_animal'] == 0){
+        $sexo_animal = '%';
+    }else{
+        $sexo_animal = $_POST['nsexo_animal'];    
+    }
+        
+    $sqlBusca = ("SELECT * FROM animais WHERE 
+        tipos like '$tipo' and 
+        racas like '$raca' and 
+        portes like '$porte' and 
+        castracao like '$castracao' and 
+        sexos like '$sexo_animal' 
+    ");

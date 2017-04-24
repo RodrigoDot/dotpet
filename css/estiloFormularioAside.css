@@ -1,0 +1,36 @@
+@cgarset "utf-8";
+
+#pesquisa{
+    width: 95%;
+    margin:  0.1 auto 0.1 auto;
+    padding-bottom: 2%;
+}
+
+#buscaAside{
+    display: block;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 0.2%;
+}
+
+.labelAside{
+    display: block;
+    width: 100%;
+    margin: 8% auto 2% auto;
+    font-size: 1.2em;
+}
+
+.selectAside{
+    display: block;
+    width: 100%;
+    margin: 2% auto 2% auto;
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.5);
+    border: none;
+    border-bottom: 1px solid darkgreen;
+    cursor: pointer;
+}
+
+
+
+

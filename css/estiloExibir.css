@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+#corpo{
+    width: 80%;
+    float: right;
+    padding: 2.2321%;
+    margin-bottom: 1%;
+    background-color: #e8f2dd;
+    -webkit-border-radius: 10px;
+}
+
+aside{
+    width: 19%;
+    float: left;
+    border-radius: 10px;
+    margin-right: 0.1%;
+    border: 1px solid darkgreen;
+}
+
+.card{
+    display: inline-block;
+    width: 49.5%;
+    margin: 0.3% auto 0 auto;
+    padding-bottom: 1.4880%;
+    background-color: #b3d594;
+    border-radius: 10px;
+}
+
+.fotoNoticia{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 45%;
+    padding: 1.4880%;
+    margin: 1.4880% 1.4880% 0 2%;
+}
+
+.foto{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardConteudo{
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1em;
+    text-align: left;
+    vertical-align: top;
+    width: 45%;
+    margin: 5% 1.4880% 0 1.4880%;
+    padding: 0 1.4880% 0 1.4880%;
+}
+
+.cardContato img{
+    cursor: pointer;
+}
+
+p{
+    margin-top: 1%;
+}
+
+.cardContato{
+    width: 100%;
+    margin: 5%;
+}
+
+.botao{
+    display: block;
+    font-size: 1em;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    -webkit-border-radius: 10px;
+    cursor: pointer;
+    background-color: seagreen;
+    color: aliceblue;
+    border: 1px solid #b3d594;
+}
+
+.botao:hover{
+    background-color: #b3d594;
+    color: darkgreen;
+    transition: 0.3s;
+    border: 1px solid darkgreen;
+}

@@ -43,8 +43,8 @@ $(function() {
             + "<label class='labelMsmFormEnvioMsm'>Mensagem</label>"
             + "<textarea name='mensagemInformante' class='textAreaMsmFormEnvioMsm'></textarea>"
             + "<input name='enviarMensagem' class='buttonMsmFormEnvioMsm botao' type='submit' value='Enviar Mensagem' />"
-            + "<a href='chat/index.php'><balel name='chat' class='label'>CHAT<label/></a>"
-            + "<input name='idAnimal' type='hidden' value='" + $exibir + "' />"
+            + "<a href='chat/index.php?idAnimal=" + $exibir + "'><balel name='chat' class='label'>CHAT<label/></a>"
+            + "<input id='idAnimal' name='idAnimal' type='hidden' value='" + $exibir + "' />"
             + "<input name='tipoProcesso' type='hidden' value='" + $tipoProcesso + "' />"
             + "</form>";
 

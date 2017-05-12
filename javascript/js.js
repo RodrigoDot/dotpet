@@ -1,40 +1,14 @@
 $(function() {
 
-    /*
-    function onClickMensagemAnimalAvistado() {
-        $("#formularioEnvio").css("display", "block")
-        .append($("<button />").addClass("closeFormEnvioMsm").text("Close"));
-        $("#formularioEnvio").append($("<form />").addClass("formEnvioMsm")
-                .append($("<label />").addClass("labelFormEnvioMsm").text("Nome "))
-                .append($("<input />").addClass("inputNomeFormEnvioMsm"))
-                .append($("<label />").addClass("labelContatoFormEnvioMsm").text("Contato "))
-                .append($("<input />").addClass("inputContatoFormEnvioMsm"))
-                .append($("<input />").addClass("inputImagemFormEnvioMsm"))
-                .append($("<label />").addClass("labelMsmFormEnvioMsm").text("Mensagem "))
-                .append($("<textarea />").addClass("textAreaMsmFormEnvioMsm"))
-                .append($("<button />").addClass("buttonMsmFormEnvioMsm").text("Enviar Mensagem"))
-        );
-    }
-    */
-
-    /*
-    function onClickMensagemAnimalAvistado() {
-        console.log("botao de envio funcionou");
-        $(".identificaoFormulario").val($(this).parent(".idAnimal").val());
-        $(".exibir").text($(".identificaoFormulario").val());
-        $("#formularioEnvio").css("display", "block");
-    }
-    */
-
     //Padrao Atual
     function onClickMensagemAnimalAvistado() {
 
         console.log("botao de envio funcionou");
         var $exibir = $(this).parent("form").attr("id"); //A FUNCAO ATTR RETORNA O VALOR DO ID DO ELEMENTO SELECIONADO
         var $tipoProcesso = $("#formularioEnvio").attr("class");
+        var $destinatario = $(this).parents("article").attr("id");
 
-
-        var $formulario = "<form class='formEnvioMsm' action='php/enviarMensagem.php' enctype='multipart/form-data' method='post'>"
+        var $formulario = "<form class='formEnvioMsm' action='php/enviarMensagem.php?idAnimal='" + $destinatario + "' enctype='multipart/form-data' method='post'>"
             + "<label for='' class='labelFormEnvioMsm'>Nome</label>"
             + "<input name='nomeInformante' class='inputNomeFormEnvioMsm' type='text' maxlength='50' placeholder='Ex.: Rodrigo' />"
             + "<label for='' class='labelContatoFormEnvioMsm'>Contato</label>"
@@ -43,7 +17,7 @@ $(function() {
             + "<label class='labelMsmFormEnvioMsm'>Mensagem</label>"
             + "<textarea name='mensagemInformante' class='textAreaMsmFormEnvioMsm'></textarea>"
             + "<input name='enviarMensagem' class='buttonMsmFormEnvioMsm botao' type='submit' value='Enviar Mensagem' />"
-            + "<a href='chat/index.php?idAnimal=" + $exibir + "'><balel name='chat' class='label'>CHAT<label/></a>"
+            + "<a href='chat/index.php?destinatario=" + $destinatario + "'><balel name='chat' class='label'>CHAT<label/></a>"
             + "<input id='idAnimal' name='idAnimal' type='hidden' value='" + $exibir + "' />"
             + "<input name='tipoProcesso' type='hidden' value='" + $tipoProcesso + "' />"
             + "</form>";
@@ -57,32 +31,11 @@ $(function() {
         $("#formularioEnvio").css("display", "none");
     }
 
-    /*FUNCAO DESNECESSARIA JAH QUE O JS ESTA CRIANDO O FORMULARIO DINAMICAMENTE
-    function erase() {
-        console.log("funcao erase funcionou");
-        $(".inputNomeFormEnvioMsm").val("");
-        $(".inputContatoFormEnvioMsm").val("");
-        $(".inputImagemFormEnvioMsm").val("");
-        $(".textAreaMsmFormEnvioMsm").val("");
-    }
-    */
 
 //CHAMADAS PARA AS FUNCOES
 $(".enviarMensagem").click(onClickMensagemAnimalAvistado);
 $(".closeFormEnvioMsm").click(onClickOutPopUp);
 
 });
-
-/*
-
-onClickMensagemAnimalAvistado
-> cria uma janela para que o usuario insira suas informacoes
-
-onClickOutPopUp
-> apaga a janela criada para que quando o botao for clicado outra vez nao aparecam dois formularios
-
-*/
-
-
 
 

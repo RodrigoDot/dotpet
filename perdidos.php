@@ -109,7 +109,7 @@
 
             <?php
 
-                $buscaAnimalPerdido = ("SELECT c.descricao_tipo_animal, a.nome_animal, b.descricao_raca_animal, a.porte, a.sexo, a.idade, a.id_animal, a.foto, a.data_cadastro
+                $buscaAnimalPerdido = ("SELECT c.descricao_tipo_animal, a.nome_animal, b.descricao_raca_animal, a.porte, a.sexo, a.idade, a.id_animal, a.foto, a.data_cadastro, a.id_usuario
                     FROM animais a
                     INNER JOIN racas_animal b
                     ON a.id_raca = b.id_raca
@@ -142,7 +142,7 @@
     //UMA DELAS EXIBE O TIPO DO DADO E A OUTRA EXIBE O VALOR ENCONTRADO NO BANCO
 
                         //copia para alteracao
-                        echo "<article class='card'>
+                        echo "<article class='card' id='$resultadoAnimal[id_usuario]'>
                                 <form id='$idA' method='post' action=''>
                                 <input type='hidden' name='formulario' value='$idA' />
                                     <figure class='fotoNoticia'>

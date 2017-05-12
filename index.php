@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="css/estilo.css" />
         <link rel="stylesheet" href="css/estiloIndex.css"/>
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <script src="lib/JQuery/jquery-3.1.1.min.js"></script>
+        <script src="javascript/login/chatLog.js"></script>
     </head>
 
     <body>
@@ -102,6 +104,5 @@
 
         </footer>
 
-    </body>
-
+    </body> 
 </html>

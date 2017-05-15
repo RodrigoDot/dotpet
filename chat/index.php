@@ -23,7 +23,7 @@
             include("view/loginForm.php");
         ?>
     </body>
-    <script src="javascript/js.js"></script>
+    <script src="javascript/chat.js"></script>
     <input id="<?php echo $_SESSION['usuario']; ?>" class="idUsuario" type="hidden" /> 
     <input id="<?php echo $_GET['destinatario']; ?>" class="destinatario" type="hidden" /> 
     <?php

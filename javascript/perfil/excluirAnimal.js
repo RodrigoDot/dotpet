@@ -1,7 +1,5 @@
 $(function() {
 
-    console.log("funcao excluir sendo chamada");
-
     function excluirAnimal() {
         var $idAnimal = $(this).attr("id");
         var $formulario = "<form class='formAlterar alert alert-danger'' action='php/perfil/excluirAnimal.php' method='post'>"

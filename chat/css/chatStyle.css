@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.chatContainer {
+    width: 90%;
+    margin: 2% auto 2% auto;
+    height: 660px;
+}
+
+#asideLogHistory {
+    float: left;
+    width: 29.5%;
+    height: 659px;
+    border: 1px solid aqua;
+    overflow: auto;
+}
+
+.topTitle {
+    display: block;
+    background-color: aqua;
+    height: 106px;
+}
+
+.logLine {
+    display: block;
+    padding: 4%;
+    border: 1px solid darkgreen;
+    text-decoration: none;
+}
+
+.topTitle {
+    
+}
+
+#wrapper {
+    float: right;
+    width: 70%;
+    border: 1px solid darkred;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+#menu {
+    display: block;
+}
+
+.welcome {
+    float: left;
+    margin-left: 0.5%;
+}
+
+.logout {
+    float: right;
+    margin-right: 0.5%;
+}
+
+#chatbox {
+    text-align:left;
+    background: #fff;
+    margin: 1% auto 3% auto;
+    height: 400px;
+    width: 100%;
+    border: 1px solid #ACD8F0;
+    overflow: auto; 
+}
+
+.userInput {
+    margin-bottom: 10px;
+}
+
+.alert-danger {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmButtons {
+    margin: 0 10px 0 10px;
+}

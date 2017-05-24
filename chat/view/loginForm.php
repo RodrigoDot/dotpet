@@ -29,13 +29,13 @@ function chatBox() {
 
             <div id="chatbox">';
 
-        if(file_exists("messenger/log.html") && filesize("messenger/log.html") > 0) {
+      /*  if(file_exists("messenger/log.html") && filesize("messenger/log.html") > 0) {
             $handle = fopen("messenger/log.html", "r");
             $contents = fread($handle, filesize("messenger/log.html"));
             fclose($handle);
             echo $contents;
         }
-
+*/
         echo'</div>
             <form id="chatForm" name="message" action="#">
                 <input id="userMsg" class="userInput form-control" name="userMsg" type="text" size="63" placeholder="Type your text here" autofocus/>

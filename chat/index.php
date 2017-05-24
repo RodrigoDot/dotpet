@@ -2,6 +2,9 @@
 <?php 
     if(!isset($_SESSION))
         session_start();
+    if(!isset($_GET['destinatario'])) {
+        $_GET['destinatario'] = $_SESSION['usuario'];
+    }
 ?>
 <html>
     <head>

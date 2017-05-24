@@ -22,6 +22,27 @@
     margin: 30px 50px 0 0;
 }
 
+#usuarioLink {
+    display: block;
+    min-width: 7%;
+    max-width: 7%;
+    position: relative;
+    float: right;
+    margin: 30px 50px 0 0;
+}
+
+#usuarioLink .chatLink {
+    width: 49%;
+    padding: 2%;
+    margin: 2%;
+}
+
+#usuarioLink .logout{
+    width: 49%;
+    margin: 2%;
+    padding: 2%;
+}
+
 #fotoPerfil{
     display: block;
     width: 100%;
@@ -30,7 +51,7 @@
 }
 
 a.usuario{
-    width: 72%;
+    width: 100%;
     display: inline-block;
     cursor: pointer;
     background-color: darkgreen;
@@ -48,10 +69,6 @@ a.usuario:hover{
     border: 1px solid darkgreen;
 }
 
-a.logout{
-    width: 25%;
-    display: inline-block;
-}
 
 .amenu{
     display: block;

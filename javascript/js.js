@@ -1,8 +1,7 @@
 $(function() {
-
+        
     //Padrao Atual
     function onClickMensagemAnimalAvistado() {
-
         console.log("botao de envio funcionou");
         var $exibir = $(this).parent("form").attr("id"); //A FUNCAO ATTR RETORNA O VALOR DO ID DO ELEMENTO SELECIONADO
         var $tipoProcesso = $("#formularioEnvio").attr("class");
@@ -17,7 +16,6 @@ $(function() {
             + "<label class='labelMsmFormEnvioMsm'>Mensagem</label>"
             + "<textarea name='mensagemInformante' class='textAreaMsmFormEnvioMsm'></textarea>"
             + "<input name='enviarMensagem' class='buttonMsmFormEnvioMsm botao' type='submit' value='Enviar Mensagem' />"
-            + "<a href='chat/index.php?destinatario=" + $destinatario + "'><balel name='chat' class='label'>CHAT<label/></a>"
             + "<input id='idAnimal' name='idAnimal' type='hidden' value='" + $exibir + "' />"
             + "<input name='tipoProcesso' type='hidden' value='" + $tipoProcesso + "' />"
             + "</form>";

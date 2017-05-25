@@ -5,6 +5,5 @@
 
     session_start();
     session_unset($_SESSION['usuario']);
+    header("Location: ../entrar.php");
 ?>
-
-<script>location.href='../entrar.php'</script>

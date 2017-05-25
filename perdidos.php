@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-
 <?php
-
-    header('Content-Type: text/html; charset=utf-8'); //FORCAR O CHARSET UTF8
-
-    include("php/banco.php");
+        
+include("php/banco.php");
 
 ?>
 
@@ -132,7 +129,6 @@
                     while($resultadoAnimal = mysqli_fetch_assoc($sqlqueryAnimalPerdido)){
 
                         $idA    = $resultadoAnimal['id_animal'];
-
                         if($resultadoAnimal['foto'] == 'imagem nao enviada'){
                             $resultadoAnimal['foto'] = 'repimagens/imagemDefault.png';
                         }
@@ -143,7 +139,7 @@
 
                         //copia para alteracao
                         echo "<article class='card' id='$resultadoAnimal[id_usuario]'>
-                                <form id='$idA' method='post' action=''>
+                                <form id='$idA' method='post' action='chat/index.php?destinatario=$resultadoAnimal[id_usuario]'>
                                 <input type='hidden' name='formulario' value='$idA' />
                                     <figure class='fotoNoticia'>
                                             <img class='foto' src='$resultadoAnimal[foto]' width='70%' height='auto' alt='Nao tem foto'/>
@@ -168,9 +164,13 @@
                                             <img src='imagens/square-twitter.png' width='15%' height='auto'/>
                                             <img src='imagens/square-google-plus.png' width='15%' height='auto'/>
                                         </p>
-                                    </div>
-                                        <input value='Ajudar encontrar esse animal' class='enviarMensagem botao' type='button'/>
-                                </form>
+                                    </div>";
+                                        if(!isset($_SESSION['usuario'])){
+                                            echo"<input value='Ajudar encontrar esse animal' class='enviarMensagem botao' type='button'/>";
+                                        }else {
+                                            echo "<input value='Ajudar encontrar esse animal' class='enviar botao' type='submit'/>";
+                                        }
+                                echo"</form>
 
                                 <div id='formularioEnvio' class='Mensagem'>
                                     <input class='closeFormEnvioMsm botao' type='button' value='Fechar' />

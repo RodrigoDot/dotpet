@@ -12,8 +12,8 @@
                 <a class='usuario' href='perfil.php'>$_SESSION[nomeUsuario]</a>
             </div>
             <div id='usuarioLink'>
-                <a class='chatLink' href='chat/index.php'>CHAT</a>
-                <a class='logout' href='php/logout.php'>Sair</a>
+                <a class='botao chatLink' href='chat/index.php'>CHAT</a>
+                <a class='botao logout' href='php/logout.php'>Sair</a>
             </div>    
         ";
     }

@@ -32,7 +32,7 @@
 }
 
 #usuarioLink .chatLink {
-    width: 49%;
+    width: 40%;
     padding: 2%;
     margin: 2%;
     font-size: 2em;
@@ -42,7 +42,7 @@
 }
 
 #usuarioLink .logout{
-    width: 49%;
+    width: 40%;
     margin: 2%;
     padding: 2%;
     font-size: 2em;
@@ -244,6 +244,7 @@ textarea:hover{
 textarea:focus{
     outline: none;
 }
+
 
 
 

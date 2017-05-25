@@ -16,7 +16,7 @@ $(function() {
         exitDisableButton();
         $("body").append($exitBox);
     }
-
+ 
     function submitMsg() {
         var clientMsg = $("#userMsg").val();
         if(!clientMsg) {

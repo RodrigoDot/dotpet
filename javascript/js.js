@@ -9,9 +9,9 @@ $(function() {
 
         var $formulario = "<form class='formEnvioMsm' action='php/enviarMensagem.php?idAnimal='" + $destinatario + "' enctype='multipart/form-data' method='post'>"
             + "<label for='' class='labelFormEnvioMsm'>Nome</label>"
-            + "<input name='nomeInformante' class='inputNomeFormEnvioMsm' type='text' maxlength='50' placeholder='Ex.: Rodrigo' />"
+            + "<input name='nomeInformante' class='inputNomeFormEnvioMsm' type='text' maxlength='50' placeholder='Ex.: Rodrigo' required/>"
             + "<label for='' class='labelContatoFormEnvioMsm'>Contato</label>"
-            + "<input name='contatoInformante' class='inputContatoFormEnvioMsm' type='text' maxlength='50' placeholder='Ex.: ' />"
+            + "<input name='contatoInformante' class='inputContatoFormEnvioMsm' type='text' maxlength='50' placeholder='Ex.: ' required/>"
             + "<input name='imagemAnimalAvistado' class='inputImagemFormEnvioMsm' type='file' placeholder='Imagem do animal' />"
             + "<label class='labelMsmFormEnvioMsm'>Mensagem</label>"
             + "<textarea name='mensagemInformante' class='textAreaMsmFormEnvioMsm'></textarea>"

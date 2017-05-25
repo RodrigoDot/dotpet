@@ -78,7 +78,7 @@
     //EXECUTAMOS A QUERY COM UM TESTE PARA FACILITAR O RECONHECIMENTO DE ERROS
     if($executarQuery = mysqli_query($conexao, $iniciaProcesso)) {
         echo "inicio de processo registrado com sucesso</br></br>";
-        header("Location: ../perfil.php");
+        header("Location: ../index.php");
     }else {
         echo "inicio de processo nao realizado</br></br>";
     }

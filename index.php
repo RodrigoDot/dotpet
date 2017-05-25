@@ -30,8 +30,8 @@
 
                 <article class="card" onclick="location.href='#'">
                     <div class="cardConteudo">
-                        <h2 class="cardTitulo">Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2 class="cardTitulo">Aumenta o número de animais nas ruas</h2>
+                        <p>Precisamos olhar para isso com mais cuidado</p>
                         <p class="cardContato">
                             <img src="imagens/facebook.png" width="15%" height="auto"/>
                             <img src="imagens/square-twitter.png" width="15%" height="auto"/>
@@ -40,14 +40,14 @@
                         <p class="cardDataAutor">14/10/2016 | Rodrigo</p>
                     </div>
                     <figure class="fotoNoticia">
-                        <img src="imagens/ImagensIndex/01.jpg" width="100%" height="auto"/>
+                        <a href="noticias/noticia1.php"><img src="imagens/ImagensIndex/01.jpg" width="100%" height="auto"/></a>
                     </figure>
                 </article>
 
                 <article class="card" onclick="location.href='#'">
                     <div class="cardConteudo">
-                        <h2 class="cardTitulo">Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2 class="cardTitulo">Um animal é um ótimo companheiro</h2>
+                        <p>Todo mundo deveria ter um animal</p>
                         <p class="cardContato">
                             <img src="imagens/facebook.png" width="15%" height="auto"/>
                             <img src="imagens/square-twitter.png" width="15%" height="auto"/>
@@ -56,14 +56,14 @@
                         <p class="cardDataAutor">14/10/2016 | Rodrigo</p>
                     </div>
                     <figure class="fotoNoticia">
-                        <img src="imagens/ImagensIndex/02.jpg" width="100%" height="auto"/>
+                        <a href="noticias/noticia2.php"><img src="imagens/ImagensIndex/02.jpg" width="100%" height="auto"/></a>
                     </figure>
                 </article>
 
                 <article class="card" onclick="location.href='#'">
                     <div class="cardConteudo">
-                        <h2 class="cardTitulo">Lorem ipsum dolor sit amet.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2 class="cardTitulo">Coexistir com respeito</h2>
+                        <p>A vida pode ser ainda mais bela com um animal por perto</p>
                         <p class="cardContato">
                             <img src="imagens/facebook.png" width="15%" height="auto"/>
                             <img src="imagens/square-twitter.png" width="15%" height="auto"/>
@@ -72,7 +72,7 @@
                         <p class="cardDataAutor">14/10/2016 | Rodrigo</p>
                     </div>
                     <figure class="fotoNoticia">
-                        <img class="foto" src="imagens/ImagensIndex/03.jpeg" width="100%" height="auto" />
+                        <a href="noticias/noticia3.php"><img class="foto" src="imagens/ImagensIndex/03.jpeg" width="100%" height="auto" /></a>
                     </figure>
                 </article>
 
